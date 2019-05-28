@@ -13,6 +13,7 @@ react-ts/
 > npm init -y
 > yarn add react react-dom @types/react @types/react-dom
 > yarn add typescript awesome-typescript-loader source-map-loader --dev
+> yarn add webpack webpack-cli webpack-dev-server --dev
 
 Note:
  awesome-typescript-loader は、ts-loader の高性能版（らしい）
@@ -34,7 +35,11 @@ webpack.config.js を作成
 
 ソースを作成・編集
 
-トランスパイル
+■トランスパイル
 
-> webpack --mode develepment
+> webpack --mode development
 
+■webpack-dev-serverを使用
+
+> npx webpack-dev-server --mode development
+--> http://localhost:8080/

@@ -4,7 +4,7 @@ var path    = require('path');
 
 module.exports = {
   context: path.join(__dirname, "src"),
-  entry: "./js/client.js",
+  entry: "./js/main.js",
   module: {
     rules: [{
       test: /\.jsx?$/,
@@ -19,7 +19,7 @@ module.exports = {
     },
     output: {
       path: __dirname + "/src/",
-      filename: "client.min.js"
+      filename: "main.min.js"
     },
     plugins: debug ? [] : [
       new webpack.optimize.OccurrenceOrderPlugin(),
